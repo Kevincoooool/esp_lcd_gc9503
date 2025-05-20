@@ -1,0 +1,38 @@
+dependencies:
+  esp_lcd_gc9503:
+    dependencies:
+    - name: espressif/cmake_utilities
+      version: 0.*
+    - name: idf
+      version: '>=5.3'
+    source:
+      path: F:\GitHub\esp_lcd_gc9503
+      type: local
+    version: 0.0.2
+  espressif/cmake_utilities:
+    component_hash: 351350613ceafba240b761b4ea991e0f231ac7a9f59a9ee901f751bddc0bb18f
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.1'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 0.5.3
+  idf:
+    source:
+      type: idf
+    version: 5.3.3
+  lvgl/lvgl:
+    component_hash: 096c69af22eaf8a2b721e3913da91918c5e6bf1a762a113ec01f401aa61337a0
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 9.2.2
+direct_dependencies:
+- esp_lcd_gc9503
+- lvgl/lvgl
+manifest_hash: 517e72be1a886afdf4fbf17c05a637eceb13f54b160d6e87e586a05abcd675f8
+target: esp32p4
+version: 2.0.0
