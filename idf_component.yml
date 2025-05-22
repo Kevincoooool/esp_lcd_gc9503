@@ -4,4 +4,4 @@ dependencies:
 description: ESP LCD GC9503
 repository: git@github.com:Kevincoooool/esp_lcd_gc9503.git
 url: https://github.com/Kevincoooool/esp_lcd_gc9503
-version: 0.0.2
+version: 0.0.3

@@ -152,7 +152,7 @@ static const gc9503_lcd_init_cmd_t vendor_specific_init_default[] = {
     {0xAC, (uint8_t[]){0x45}, 1, 0},
     {0xF8, (uint8_t[]){0x8A}, 1, 0},
     {0xA7, (uint8_t[]){0x47}, 1, 0},
-    {0xA0, (uint8_t[]){0xdd}, 1, 0},
+    {0xA0, (uint8_t[]){0x66}, 1, 0},
     {0xFA, (uint8_t[]){0x08, 0x08, 0x00, 0x04}, 4, 0},
     {0x71, (uint8_t[]){0x48}, 1, 0},
     {0x72, (uint8_t[]){0x48}, 1, 0},
