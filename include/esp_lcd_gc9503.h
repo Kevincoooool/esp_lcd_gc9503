@@ -107,40 +107,38 @@ esp_err_t esp_lcd_new_panel_gc9503(const esp_lcd_panel_io_handle_t io, const esp
     {                                                    \
         .dpi_clk_src = MIPI_DSI_DPI_CLK_SRC_DEFAULT,     \
         .dpi_clock_freq_mhz = 26,                        \
-        .virtual_channel = 0,                            \
         .pixel_format = px_format,                       \
         .num_fbs = 1,                                    \
         .video_timing = {                                \
             .h_size = 480,                               \
             .v_size = 800,                               \
+            .hsync_pulse_width = 5,                      \
             .hsync_back_porch = 20,                      \
-            .hsync_pulse_width = 5,                     \
             .hsync_front_porch = 20,                     \
-            .vsync_back_porch = 10,                      \
             .vsync_pulse_width = 5,                      \
+            .vsync_back_porch = 10,                      \
             .vsync_front_porch = 10,                     \
         },                                               \
-        .flags.use_dma2d = true,                         \
+        .flags = {.use_dma2d = true},                    \
     }
 
-#define GC9503_480_800_PANEL_60HZ_DPI_CONFIG(px_format) \
+#define GC9503_480_800_PANEL_60HZ_DPI_CONFIG(px_format)  \
     {                                                    \
         .dpi_clk_src = MIPI_DSI_DPI_CLK_SRC_DEFAULT,     \
         .dpi_clock_freq_mhz = 26,                        \
-        .virtual_channel = 0,                            \
         .pixel_format = px_format,                       \
         .num_fbs = 1,                                    \
         .video_timing = {                                \
             .h_size = 480,                               \
             .v_size = 800,                               \
+            .hsync_pulse_width = 5,                      \
             .hsync_back_porch = 20,                      \
-            .hsync_pulse_width = 5,                     \
             .hsync_front_porch = 20,                     \
-            .vsync_back_porch = 10,                      \
             .vsync_pulse_width = 5,                      \
+            .vsync_back_porch = 10,                      \
             .vsync_front_porch = 10,                     \
         },                                               \
-        .flags.use_dma2d = true,                         \
+        .flags = {.use_dma2d = true},                    \
     }
 #endif
 
